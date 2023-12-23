@@ -46,7 +46,7 @@ function login() {
     alert("Email is not existed! Please Sign up a new account", "danger");
   else if (user) {
     if (user[0].password == passInput.value) {
-      window.location.href = "./index.html";
+      window.location.href = "./home.html";
       localStorage.setItem("active-user", `${user[0].name}`);
     } else passwordAlert(passInput, alertPassword, "password");
   }
