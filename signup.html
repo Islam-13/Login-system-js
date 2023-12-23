@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-content w-75 m-auto p-5 text-center mt-4 rounded">
+        <h1 class="text-capitalize mb-4">smart login system</h1>
+        <div class="position-relative">
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <input
+            id="uName"
+            type="text"
+            name="userName"
+            placeholder="Enter your name"
+          />
+          <div class="alert-image alert-name-image"></div>
+          <p class="alert alert-name"></p>
+        </div>
+        <div class="position-relative">
+          <div class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <input
+            id="uEmail"
+            type="email"
+            name="userEmail"
+            placeholder="Enter your email"
+          />
+          <div class="alert-image alert-email-image"></div>
+          <p class="alert alert-email"></p>
+        </div>
+        <div class="position-relative">
+          <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="eye-icon">
+            <span class="eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
+            <span class="eye"><i class="fa-solid fa-eye"></i></span>
+          </div>
+          <input
+            id="uPassword"
+            type="password"
+            name="userPassword"
+            placeholder="Enter password"
+          />
+          <div class="alert-image alert-password-image"></div>
+          <p class="alert alert-password"></p>
+          <ul class="password-popup">
+            <li>password should be between 8 to 15 characters</li>
+            <li>at least one lowercase letter</li>
+            <li>at least one uppercase letter</li>
+            <li>at least one numeric digit</li>
+            <li>at least one special character</li>
+          </ul>
+        </div>
+        <p class="alert-msg success"></p>
+        <button class="signup-btn">sign up</button>
+        <p>You have an account? <a href="./login.html">Login</a></p>
+      </div>
+    </div>
+
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
