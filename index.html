@@ -9,21 +9,43 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="shadow">
-      <div class="container">
-        <div class="d-flex justify-content-between p-3">
-          <h1 class="text-uppercase">smart login</h1>
-          <button class="btn btn-outline-warning logout-btn">Log out</button>
+    <div class="container">
+      <div class="form-content w-75 m-auto p-5 text-center mt-4 rounded">
+        <h1 class="text-capitalize mb-4">smart login system</h1>
+        <div class="position-relative">
+          <div class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <input
+            id="uEmail"
+            type="email"
+            name="userEmail"
+            placeholder="Enter your email"
+          />
+          <p class="alert alert-email"></p>
         </div>
-      </div>
-    </nav>
-
-    <div class="home d-flex align-items-center text-center w-75 m-auto">
-      <div class="container">
-        <h2 class="p-5 userName text-capitalize">Welcome za3bola</h2>
+        <div class="position-relative">
+          <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="eye-icon">
+            <span class="eye-slash"><i class="fa-solid fa-eye-slash"></i></span>
+            <span class="eye"><i class="fa-solid fa-eye"></i></span>
+          </div>
+          <input
+            id="uPassword"
+            type="password"
+            name="userPassword"
+            placeholder="Enter your password"
+          />
+          <p class="alert alert-password"></p>
+        </div>
+        <p class="alert-msg success"></p>
+        <button class="signup-btn">login</button>
+        <p>Don’t have an account? <a href="./signup.html">Sign Up</a></p>
       </div>
     </div>
 
-    <script src="./js/home.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>
